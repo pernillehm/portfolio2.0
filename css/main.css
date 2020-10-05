@@ -1,0 +1,598 @@
+body {
+  background-color: #C8A0EB;
+  margin: 0 0 0 0;
+}
+
+/* ---------- nav styling ---------- */
+
+.nav>li {
+  display: inline;
+  padding-left: 5%;
+  font-family: 'abril fatface', serif;
+  font-size: 1.7em;
+}
+
+.nav>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav>li>a:hover {
+  color: #FED47D;
+
+}
+
+.nav>li>a:active {
+  text-decoration: none;
+  color: #FED47D;
+}
+
+.nav>li>.skift-farve>a {
+  text-decoration: none;
+  color: #FED47D;
+}
+
+.nav {
+  text-align: right;
+  padding-top: 1.2%;
+  padding-right: 4%;
+}
+
+.p-home {
+  position: absolute;
+  margin-left: 2%;
+  width: 10%;
+  text-decoration: none;
+}
+
+.p-home:hover {
+  opacity: 0.5;
+}
+
+/* ---------- exit styling ---------- */
+.exit {
+  position: absolute;
+  right: 0;
+  margin-right: 2%;
+  width: 10%;
+  margin-top: 1%;
+}
+
+/* ---------- til toppen styling ---------- */
+.til-toppen {
+  position: sticky;
+  float: right;
+  bottom: 0;
+  width: 10%;
+  margin-right: 2%;
+
+}
+
+/* ---------- loader styling ---------- */
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  overflow: hidden;
+  text-align: center;
+  background-color: #C8A0EB;
+
+}
+
+#animation {
+  width: 10%;
+  height: auto;
+  animation: intro-animation 3s;
+  margin-top: 15%
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+@keyframes intro-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  5% {
+    transform: scale(0.5);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(0.5);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(3);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+
+}
+
+/* ---------- kontakt styling ---------- */
+
+.linkedin-logo {
+  width: 15%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+
+}
+
+.insta-logo {
+  width: 15%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.facebook-logo {
+  width: 15%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+
+}
+
+.kontakt-tekst {
+  font-family: 'Abril Fatface', serif;
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+
+}
+
+.kontakt-tekst>a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+}
+
+.p-profil-billede {
+  text-align: center;
+}
+
+
+.p-profil-billede>img {
+  width: 80%;
+}
+
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 6%;
+  align-items: center;
+}
+
+.some-logo {
+  text-align: center;
+}
+
+
+/* ---------- projekt styling ---------- */
+
+.projekt-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 2%;
+  width: 100%;
+  position: relative;
+
+}
+
+.grid-item {
+  text-align: center;
+  display: inline-block;
+  margin-top: -4px;
+
+}
+
+.grid-item>img {
+  width: 33.33vw;
+  position: relative;
+  transition: .5s ease-in-out all;
+}
+
+.tekst>.projekt-side-emne,
+.projekt-side-underemne {
+  font-weight: lighter;
+  color: white;
+  font-size: 1.25em;
+  position: absolute;
+  display: table;
+  vertical-align: middle;
+  opacity: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.tekst>.projekt-side-emne {
+  font-family: 'abril fatface', serif;
+  font-size: 2em;
+}
+
+.tekst>.projekt-side-underemne {
+  font-family: 'nunito', sans-serif;
+  font-size: 1.5em;
+}
+
+.tekst>.projekt-side-emne,
+.projekt-side-underemne {
+  text-align: center;
+  transition: .5s ease-in-out all;
+}
+
+.grid-item>img:hover {
+  opacity: .10;
+}
+
+.grid-item>img:hover>.tekst>.projekt-side-emne,
+.projekt-side-underemne {
+  opacity: .3;
+  visibility: visible;
+
+}
+
+/* ---------- thisted bryghus styling ---------- */
+
+.tb-screen-imgs>img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+
+.projekt-tekst-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.projekt-overskrift {
+  font-family: 'Abril fatface', serif;
+  color: white;
+}
+
+.projekt-broed-tekst {
+  font-family: 'nunito', sans-serif;
+  color: white;
+  margin-top: -1em;
+  padding-right: 10%;
+  font-weight: lighter;
+}
+
+.blok-1,
+.blok-2,
+.blok-3 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.some-video-tb {
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.some-tekst-tb {
+  text-align: center;
+  font-family: 'nunito', sans-serif;
+  color: white;
+  font-weight: lighter;
+
+}
+
+.se-siden-boks {
+  position: relative;
+  text-align: center;
+  padding: 5%;
+}
+
+.se-siden-tekst {
+  font-family: 'abril fatface', serif;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.baggrund-til-link {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+/* ---------- HH styling ---------- */
+
+.hh-iphone-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-right: 20%;
+  padding-left: 20%;
+
+}
+
+.hh-grid-item {
+  text-align: center;
+  width: 100%;
+}
+
+.hh-grid-item>img {
+  width: 450px;
+}
+
+/* ---------- Illustrationer styling ---------- */
+
+.boys-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 5%;
+
+}
+
+.boys-img>img {
+  width: 80%;
+  text-align: center;
+}
+
+.boys-img {
+  align-items: center;
+  text-align: center;
+}
+
+.illustration-animation-tekst {
+  padding-top: 7%;
+  padding-left: 4%;
+  width: 20%;
+}
+
+.illustration-animation-h2 {
+  font-family: 'abril fatface', serif;
+  color: white;
+}
+
+.illustration-animation-broed-tekst {
+  font-family: 'nunito', sans-serif;
+  color: white;
+  font-weight: lighter;
+
+  margin-top: -1em;
+}
+
+.item1 {
+  grid-area: rugben;
+}
+
+.item2 {
+  grid-area: rugberta;
+}
+
+.item3 {
+  grid-area: pilsner;
+}
+
+.item1>img {
+  width: 60%;
+  padding-left: 6%;
+}
+
+.item2>img {
+  width: 60%;
+  padding-left: 6%;
+}
+
+.item3>img {
+  width: 45%;
+  padding-right: 6%;
+}
+
+
+.rug-pilsner-grid {
+  display: grid;
+  grid-template-areas:
+    'rugben pilsner '
+    'rugberta pilsner ';
+  padding-top: 5%;
+  grid-gap: 20px;
+}
+
+.rug-pilsner-grid>div {
+  text-align: center;
+}
+
+.det-gule-lyn {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+
+.street-granny {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+}
+
+.mk-bravo {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+}
+
+/* ---------- animationer styling ---------- */
+
+.udays-animation-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 6%;
+}
+
+.udays-gifs>img {
+  width: 80%;
+}
+
+.udays-gifs {
+  text-align: center;
+}
+
+.animerede-menupunkter-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 8%;
+}
+
+
+.animerede-menupunkter {
+  text-align: center;
+}
+
+.projekter-menu-gif {
+  width: 90%;
+}
+
+.om-mig-menu-gif {
+  width: 70%;
+  padding-top: 4%;
+
+}
+
+.kontakt-menu-gif {
+  width: 65%;
+  padding-top: 5%;
+}
+
+.mg-video {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.less-talk-more-icecream {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding-top: 6%;
+}
+
+.et-lille-svin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-top: 6%;
+
+}
+
+/* ---------- om mig styling ---------- */
+
+.om-mig-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 4%;
+}
+
+.om-mig-grid-item1>img {
+  width: 60%;
+  padding-left: 15%;
+
+}
+
+.om-mig-grid-item1 {
+  text-align: center;
+}
+
+.om-mig-grid-item2 {
+  padding-left: 15%;
+  width: 50%;
+  padding-top: 5%;
+
+}
+
+.om-mig-grid-item2>h2 {
+  color: white;
+  font-family: 'abril fatface', serif;
+}
+
+.om-mig-grid-item2>p {
+  color: white;
+  font-family: 'nunito', sans-serif;
+  margin-top: -1em;
+  font-weight: lighter;
+}
+
+.om-mig-tekst-grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding-top: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 7%;
+}
+
+.om-mig-overskrift {
+  font-family: 'Abril fatface', serif;
+  color: white;
+}
+
+.om-mig-broed-tekst {
+  font-family: 'nunito', 'sans serif';
+  color: white;
+  margin-top: -1em;
+  padding-right: 10%;
+  font-weight: lighter;
+}
+
+.blok-1,
+.blok-2,
+.blok-3 {
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.om-mig-broed-tekst>span {
+  line-height: 1.6;
+}
